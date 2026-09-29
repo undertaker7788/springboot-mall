@@ -96,7 +96,7 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.OK).body(updatedProduct);
     }
 
-    @DeleteMapping("/prodcuts/{productId}")
+    @DeleteMapping("/products/{productId}")
     public ResponseEntity<?> deleteProduct(@PathVariable Integer productId) {
         productService.deleteProductById(productId);
 
