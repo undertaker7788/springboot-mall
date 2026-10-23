@@ -18,5 +18,7 @@ public interface ProductDao {
 
     void updateProduct(Integer productId, ProductRequest productRequest);
 
+    void updateStock(Integer productId, int stock);
+
     void deleteProductById(Integer productId);
 }
