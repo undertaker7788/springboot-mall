@@ -56,6 +56,6 @@ public class OrderController {
 
         Order order = orderService.getOrderById(orderId);
 
-        return ResponseEntity.status(HttpStatus.OK).body(order);
+        return ResponseEntity.status(HttpStatus.CREATED).body(order);
     }
 }
